@@ -3,7 +3,7 @@
   const iframe = document.getElementById('x');
   iframe.onload = () => {
     const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-    const items = iframeDoc.querySelectorAll('li'); // example: clicking last <li>
+    const items = iframeDoc.querySelectorAll('a'); // example: clicking last <li>
     if (items.length > 0) {
       items[items.length - 1].click();
       console.log("Last item clicked!");
