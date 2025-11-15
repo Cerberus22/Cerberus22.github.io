@@ -2,13 +2,6 @@
 <script>
   const iframe = document.getElementById('x');
   iframe.onload = () => {
-    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-    const items = iframeDoc.querySelectorAll('a'); // example: clicking last <li>
-    if (items.length > 0) {
-      items[items.length - 1].click();
-      console.log("Last item clicked!");
-    } else {
-      console.log("No items found in iframe.");
-    }
+  	document.getElementsByClassName("file")[2].click();
   };
 </script>
